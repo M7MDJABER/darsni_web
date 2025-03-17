@@ -1,0 +1,25 @@
+# Log In API Documentation
+
+## Endpoint: `POST /log_in`
+
+### Description:
+This API endpoint allows users to log in by providing their **email** and **password**.
+
+### Request:
+- **Method**: `POST`
+- **Content-Type**: `application/json`
+- **Body Parameters**:
+  - `email`: The email address of the user trying to log in.
+  - `password`: The password of the user trying to log in.
+
+### Response:
+- **Success Response**:
+  ```json
+  {
+    "message": "Login successful!",
+    "user": {
+      "email": "user@example.com",
+      "full_name": "User Name"
+    },
+    "success": true
+  }
